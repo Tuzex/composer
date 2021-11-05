@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
+      PATH: '2.0'
       VERSION: '2'
     steps:
       -
@@ -35,7 +36,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./${{ env.VERSION }}/
+          context: ./${{ env.PATH }}/
           push: true
           tags: |
             tuzex/composer:${{ env.VERSION }}
