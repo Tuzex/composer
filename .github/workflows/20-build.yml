@@ -6,12 +6,11 @@ on:
     paths:
       - '2.0/**'
 
-env:
-  VERSION: '2.0'
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VERSION: '2'
     steps:
       -
         name: Checkout
