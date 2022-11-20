@@ -38,5 +38,5 @@ jobs:
           context: ./v${{ env.VERSION }}/
           push: true
           tags: |
-            codeasoft/composer:${{ env.VERSION }}
-            ghcr.io/codeasoft/composer:${{ env.VERSION }}
+            tuzex/composer:${{ env.VERSION }}
+            ghcr.io/tuzex/composer:${{ env.VERSION }}
